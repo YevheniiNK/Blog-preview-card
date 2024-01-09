@@ -1,0 +1,126 @@
+
+/* Connections */
+@import url("./nullstyle.css");
+
+/*	Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+/* ==================== Global style ====================== */
+
+:root {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+    color: hsl(228, 12%, 48%);
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  background-color: var(--yellow);
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+/* ==================== main ====================== */
+
+.card {
+  background-color: var(--white);
+  padding: 2.3rem;
+  border: 1px solid black;
+  border-radius: 1.7rem;
+  font-size: 1.2rem;
+  box-shadow: 8px 8px #000000;
+  color: var(--black);
+  max-width: 385px;
+  height: 520px;
+}
+
+.card-header img  {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  margin: 2rem 0;
+}
+
+.card-body__title {
+  font-weight: 800;
+  padding: 0.7rem 1.2rem;
+  background-color: var(--yellow);
+  border-radius: 0.3rem;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.card-body__datatime {
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.card-body__link {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--black);
+  margin: 2rem 0;
+}
+
+.card-body__link:hover {
+  color: var(--yellow);
+}
+
+.card:hover {
+  box-shadow: 12px 12px #000000;
+  transition: all 0.1s;
+}
+
+.card-body__text {
+  color: var(--grey);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  font-weight: 800;
+}
+
+.user__avatar {
+  width: 3.2rem;
+}
+
+.user__name {
+  font-size: 1.4rem;
+}
+
+/* ==================== footer ====================== */
+
+.footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.attribution > a {
+  color: #3e52a3; 
+}
+
+
