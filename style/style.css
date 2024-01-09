@@ -80,6 +80,11 @@
   color: var(--yellow);
 }
 
+.card:hover {
+  box-shadow: 12px 12px #000000;
+  transition: all 0.1s;
+}
+
 .card-body__text {
   color: var(--grey);
   font-size: 1.4rem;
